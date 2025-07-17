@@ -14,7 +14,7 @@ function createGrid() {
             column.classList.add('cell');
             row.append(column);
         }
-        gridContainer.append(row);
+        grid.append(row);
         
     }
     
