@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector('#grid-container');
+const grid = document.querySelector('#grid');
 const gridSizeButton = document.querySelector
 ('#grid-size-button');
 let squaresPerSide = 16;
