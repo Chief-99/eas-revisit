@@ -1,5 +1,5 @@
 #grid-container {
-    border: solid black 2px;
+    border: solid black 1px;
     width: 50rem;
     height: 50rem;
     display: flex;
