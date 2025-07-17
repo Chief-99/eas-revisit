@@ -1,12 +1,14 @@
 const gridContainer = document.querySelector('#grid-container');
-const gridSizeButton = document.querySelector('#grid-size-button');
+const gridSizeButton = document.querySelector
+('#grid-size-button');
+let squaresPerSide = 16;
 
 function createGrid() {
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < squaresPerSide; i++) {
         let row = document.createElement('div');
         row.classList.add('row')
         
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < squaresPerSide; j++) {
             let column = document.createElement('div');
             column.classList.add('cell');
             row.append(column);
@@ -19,6 +21,8 @@ function createGrid() {
 
 
 createGrid();
+
+
 
 const cells = document.querySelectorAll('.cell');
 
