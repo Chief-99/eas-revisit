@@ -10,4 +10,10 @@
 .row {
     border: black 1px solid;
     height: 100%;
+    display: flex;
+}
+
+.column {
+    border: black solid 1px;
+    width: 100%;
 }
