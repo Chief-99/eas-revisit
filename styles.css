@@ -2,9 +2,12 @@
     border: solid black 1px;
     width: 50rem;
     height: 50rem;
+}
+
+#grid {
     display: flex;
     flex-direction: column;
-    
+    height: 100%;
 }
 
 .row {
