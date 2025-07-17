@@ -7,7 +7,7 @@ function createGrid() {
         
         for (let j = 0; j < 16; j++) {
             let column = document.createElement('div');
-            column.classList.add('column');
+            column.classList.add('column', 'cell');
             row.append(column);
         }
         gridContainer.append(row);
