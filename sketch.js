@@ -17,16 +17,14 @@ function createGrid() {
         
     }
     
-    return;
 }
 
 
 createGrid();
 
 gridSizeButton.addEventListener('click', function() {
-    let squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
+    squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
     createGrid();
-    return;
 })
 
 const cells = document.querySelectorAll('.cell');
