@@ -7,12 +7,25 @@ function createGrid() {
         
         for (let j = 0; j < 16; j++) {
             let column = document.createElement('div');
-            column.classList.add('column', 'cell');
+            column.classList.add('cell');
             row.append(column);
         }
         gridContainer.append(row);
-
+        
     }
+    
 }
 
+
 createGrid();
+
+const cells = document.querySelectorAll('.cell');
+
+cells.forEach((cell) => {
+    cell.addEventListener('mouseenter', fillCells)
+})
+
+function fillCells(event) {
+    let cell = event.target;
+    cell.style.background = 'black';
+}
