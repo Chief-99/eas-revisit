@@ -8,10 +8,10 @@ function createGrid() {
         for (let j = 0; j <= 16; j++) {
             let column = document.createElement('div');
             column.classList.add('column');
-            row.appendChild(column);
+            row.append(column);
         }
         
-        gridContainer.appendChild(row);
+        gridContainer.append(row);
     }
 }
 
