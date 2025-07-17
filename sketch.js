@@ -24,6 +24,16 @@ function createGrid(squares) {
 
     gridContainer.appendChild(grid);
     
+    const cells = document.querySelectorAll('.cell');
+    
+    cells.forEach((cell) => {
+        cell.addEventListener('mouseenter', fillCells)
+    })
+    
+    function fillCells(event) {
+        let cell = event.target;
+        cell.style.background = 'black';
+    }
 }
 
 
@@ -33,14 +43,3 @@ gridSizeButton.addEventListener('click', function() {
     squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
     createGrid(squaresPerSide);
 })
-
-const cells = document.querySelectorAll('.cell');
-
-cells.forEach((cell) => {
-    cell.addEventListener('mouseenter', fillCells)
-})
-
-function fillCells(event) {
-    let cell = event.target;
-    cell.style.background = 'black';
-}
