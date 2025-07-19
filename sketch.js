@@ -28,7 +28,11 @@ function createGrid(squares) {
     const cells = document.querySelectorAll('.cell');
     
     cells.forEach((cell) => {
-        // cell.addEventListener('mouseenter', fillCells)
+        if (colourFlag === 0) {
+            cell.addEventListener('mouseenter', blackFill);
+        } else if (colourFlag === 1) {
+            cell.addEventListener('mouseenter', randomFill);
+        }
     })
     
     function blackFill(event) {
