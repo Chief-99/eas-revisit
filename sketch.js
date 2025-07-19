@@ -30,7 +30,12 @@ function createGrid(squares) {
         cell.addEventListener('mouseenter', fillCells)
     })
     
-    function fillCells(event) {
+    function blackFill(event) {
+        let cell = event.target;
+        cell.style.background = 'black';
+    }
+
+    function randomFill(event) {
         let cell = event.target;
         let h = Math.floor(Math.random() * 360);
         let s = Math.floor(Math.random() * 100);
