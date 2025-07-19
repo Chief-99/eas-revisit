@@ -1,7 +1,7 @@
 const gridContainer = document.querySelector('#grid-container');
+const gridSizeButton = document.querySelector('#grid-size-button');
+const randomButton = document.querySelector('#random-colours');
 let grid = document.querySelector('#grid');
-const gridSizeButton = document.querySelector
-('#grid-size-button');
 let squaresPerSide = 16;
 
 function createGrid(squares) {
