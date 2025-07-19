@@ -32,6 +32,9 @@ function createGrid(squares) {
     
     function fillCells(event) {
         let cell = event.target;
+        let h = Math.floor(Math.random() * 360);
+        let s = Math.floor(Math.random() * 100);
+        let l = Math.floor(Math.random() * 100);
         cell.style.background = 'black';
     }
 }
