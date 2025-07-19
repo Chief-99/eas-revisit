@@ -3,6 +3,7 @@ const gridSizeButton = document.querySelector('#grid-size-button');
 const randomButton = document.querySelector('#random-colours');
 let grid = document.querySelector('#grid');
 let squaresPerSide = 16;
+let colourFlag = 0;
 
 function createGrid(squares) {
     if (grid.hasChildNodes()) {
