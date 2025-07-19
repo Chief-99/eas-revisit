@@ -28,7 +28,7 @@ function createGrid(squares) {
     const cells = document.querySelectorAll('.cell');
     
     cells.forEach((cell) => {
-        cell.addEventListener('mouseenter', fillCells)
+        // cell.addEventListener('mouseenter', fillCells)
     })
     
     function blackFill(event) {
@@ -57,4 +57,15 @@ gridSizeButton.addEventListener('click', function() {
         squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
     }
     createGrid(squaresPerSide);
+})
+
+randomButton.addEventListener('click', () => {
+    switch (colourFlag) {
+        case 0:
+            colourFlag = 1;
+            break;
+        case 1:
+            colourFlag = 0;
+            break;
+    }
 })
