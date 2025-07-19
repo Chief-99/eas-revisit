@@ -55,6 +55,8 @@ function createGrid(squares) {
             cell.style.background = 'white';
         })
     } 
+    
+    clearButton.addEventListener('click', clearCells);
 }
 
 
@@ -68,7 +70,7 @@ gridSizeButton.addEventListener('click', function() {
         squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
     }
     createGrid(squaresPerSide);
-})
+});
 
 randomButton.addEventListener('click', () => {
     switch (colourFlag) {
@@ -80,4 +82,4 @@ randomButton.addEventListener('click', () => {
             break;
     }
     createGrid(squaresPerSide);
-})
+});
