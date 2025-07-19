@@ -49,6 +49,12 @@ function createGrid(squares) {
         let randomColour = `hsl(${h}, ${s}%, ${l}%)`;
         cell.style.background = randomColour;
     }
+
+    function clearCells(event) {
+        cells.forEach((cell) => {
+            cell.style.background = 'white';
+        })
+    } 
 }
 
 
