@@ -35,7 +35,8 @@ function createGrid(squares) {
         let h = Math.floor(Math.random() * 360);
         let s = Math.floor(Math.random() * 100);
         let l = Math.floor(Math.random() * 100);
-        cell.style.background = 'black';
+        let randomColour = `hsl(${h}, ${s}%, ${l}%)`;
+        cell.style.background = randomColour;
     }
 }
 
