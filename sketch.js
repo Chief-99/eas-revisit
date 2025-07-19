@@ -72,4 +72,5 @@ randomButton.addEventListener('click', () => {
             colourFlag = 0;
             break;
     }
+    createGrid(squaresPerSide);
 })
