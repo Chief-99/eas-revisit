@@ -41,5 +41,10 @@ createGrid(squaresPerSide);
 
 gridSizeButton.addEventListener('click', function() {
     squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
+    
+    if (squaresPerSide > 100) {
+        alert('Please enter a number less than 100');
+        squaresPerSide = Number(prompt('Enter number of squares per side:', ''));
+    }
     createGrid(squaresPerSide);
 })
