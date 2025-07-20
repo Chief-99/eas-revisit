@@ -58,6 +58,12 @@ function createGrid(squares) {
     } 
 
     clearButton.addEventListener('click', clearCells);
+
+    toggleGridButton.addEventListener('click', () => {
+        cells.forEach((cell) => {
+            cell.style.border = 'none';
+        })
+    })
 }
 
 
