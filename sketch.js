@@ -2,6 +2,7 @@ const gridContainer = document.querySelector('#grid-container');
 const gridSizeButton = document.querySelector('#grid-size-button');
 const randomButton = document.querySelector('#random-colours-button');
 const clearButton = document.querySelector('#clear-button');
+const toggleGridButton = document.querySelector('#gridlines-button');
 let grid = document.querySelector('#grid');
 let squaresPerSide = 16;
 let colourFlag = 0;
