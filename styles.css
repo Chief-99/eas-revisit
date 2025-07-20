@@ -16,6 +16,9 @@
 }
 
 .cell {
-    border: black solid 1px;
     width: 100%;
+}
+
+.cell-border {
+    border: black solid 1px;
 }

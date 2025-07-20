@@ -19,7 +19,7 @@ function createGrid(squares) {
         
         for (let j = 0; j < squares; j++) {
             let column = document.createElement('div');
-            column.classList.add('cell');
+            column.classList.add('cell', 'cell-border');
             row.append(column);
         }
         grid.append(row);  
@@ -61,7 +61,7 @@ function createGrid(squares) {
 
     toggleGridButton.addEventListener('click', () => {
         cells.forEach((cell) => {
-            cell.style.border = 'none';
+            cell.classList.toggle('cell-border');
         })
     })
 }
