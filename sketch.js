@@ -50,12 +50,12 @@ function createGrid(squares) {
         cell.style.background = randomColour;
     }
 
-    function clearCells(event) {
+    function clearCells() {
         cells.forEach((cell) => {
             cell.style.background = 'white';
         })
     } 
-    
+
     clearButton.addEventListener('click', clearCells);
 }
 
