@@ -31,8 +31,13 @@ function createGrid(squares) {
     const cells = document.querySelectorAll('.cell');
     
     cells.forEach((cell) => {
+        let i = 0;
         if (colourFlag === 0) {
-            cell.addEventListener('mouseenter', blackFill);
+            cell.addEventListener('mouseenter', (event) => {
+                let target = event.target;
+                i += 10;
+                target.style.background = `hsla(0, 0%, 0%, ${i}%)`;
+            });
         } else if (colourFlag === 1) {
             cell.addEventListener('mouseenter', randomFill);
         }
@@ -41,10 +46,6 @@ function createGrid(squares) {
     function blackFill(event) {
         let cell = event.target;
         cell.style.background = 'black';
-    }
-
-    function shadeFill(event) {
-        
     }
 
     function randomFill(event) {
