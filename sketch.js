@@ -7,6 +7,7 @@ const shadingButton = document.querySelector('#shading-button');
 let grid = document.querySelector('#grid');
 let squaresPerSide = 16;
 let colourFlag = 0;
+let shadingflag = 0;
 
 function createGrid(squares) {
     if (grid.hasChildNodes()) {
