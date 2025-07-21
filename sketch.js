@@ -43,6 +43,10 @@ function createGrid(squares) {
         cell.style.background = 'black';
     }
 
+    function shadeFill(event) {
+        
+    }
+
     function randomFill(event) {
         let cell = event.target;
         let h = Math.floor(Math.random() * 360);
