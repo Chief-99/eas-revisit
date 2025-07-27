@@ -34,11 +34,7 @@ function createGrid(squares) {
     cells.forEach((cell) => {
         let i = 0;
         if (colourFlag === 0) {
-            cell.addEventListener('mouseenter', (event) => {
-                let target = event.target;
-                i += 10;
-                target.style.background = `hsla(0, 0%, 0%, ${i}%)`;
-            });
+            cell.addEventListener('mouseenter', blackFill);
         } else if (colourFlag === 1) {
             cell.addEventListener('mouseenter', randomFill);
         }
