@@ -1,0 +1,16 @@
+#grid-container {
+    width: 50rem;
+    height: 50rem;
+}
+
+#grid {
+    width: 100%;
+    border: black 1px solid;
+    display: flex;
+    height: 100%;
+}
+
+.cell {
+    border: black 1px solid;
+    width: 100%;
+}
