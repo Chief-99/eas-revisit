@@ -8,9 +8,15 @@
     border: black 1px solid;
     display: flex;
     height: 100%;
+    flex-direction: column;
 }
 
 .cell {
     border: black 1px solid;
     width: 100%;
+}
+
+.row {
+    display: flex;
+    height: 100%;
 }
