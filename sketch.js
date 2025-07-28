@@ -2,10 +2,12 @@ const gridContainer = document.getElementById('grid-container');
 const gridSizeButton = document.getElementById('grid-size-button');
 const clearButton = document.getElementById('clear-button');
 const randomButton = document.getElementById('random-colours-button');
+const gridlinesButton = document.getElementById('gridlines-button');
 let squaresPerSide = 16;
 const flags = {
     blackFlag: true,
-}
+    gridlines: true,
+};
 
 function createGrid(squaresValue) {
     const existingGrid = document.getElementById('grid');
@@ -74,6 +76,8 @@ function clearCells() {
         cell.style.background = 'white';
     }) 
 }
+
+
 
 gridSizeButton.addEventListener('click', getGridSize);
 clearButton.addEventListener('click', clearCells);
