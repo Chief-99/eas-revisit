@@ -1,6 +1,7 @@
 #grid-container {
     width: 50rem;
     height: 50rem;
+    margin-top: 8px;
 }
 
 #grid {
