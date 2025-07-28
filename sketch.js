@@ -56,6 +56,14 @@ function getGridSize() {
     createGrid(squaresPerSide);
 }
 
-gridSizeButton.addEventListener('click', getGridSize)
+function clearCells() {
+    let allCells = document.querySelectorAll('.cell');
+    allCells.forEach((cell) => {
+        cell.style.background = 'white';
+    }) 
+}
+
+gridSizeButton.addEventListener('click', getGridSize);
+clearButton.addEventListener('click', clearCells);
 
 createGrid(squaresPerSide);
