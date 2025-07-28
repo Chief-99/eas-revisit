@@ -1,5 +1,7 @@
 const gridContainer = document.getElementById('grid-container');
 const grid = document.getElementById('grid');
+const gridSizeButton = document.getElementById('grid-size-button');
+
 let squaresPerSide = 16;
 
 function createGrid() {
