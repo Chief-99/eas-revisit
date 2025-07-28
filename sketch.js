@@ -68,6 +68,7 @@ function getGridSize() {
         return;
     }
     createGrid(squaresPerSide);
+    flags.gridlines = true;
 }
 
 function clearCells() {
