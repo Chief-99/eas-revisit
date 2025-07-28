@@ -42,12 +42,15 @@ function cellEventListeners() {
 
 function handleCellHover(event) {
     let target = event.target;
-    // target.style.backgroundColor = 'rgba(0, 0, 0, 1)';
     let h = Math.floor(Math.random() * 255);
     let s = Math.floor(Math.random() * 255);
     let l = Math.floor(Math.random() * 255);
 
-    target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`;
+    if (flags.blackFlag) {
+        target.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+    } else {
+        target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`;
+    }
 }
 
 function getGridSize() {
@@ -74,5 +77,9 @@ function clearCells() {
 
 gridSizeButton.addEventListener('click', getGridSize);
 clearButton.addEventListener('click', clearCells);
+randomButton.addEventListener('click', () => {
+    flags.blackFlag = !flags.blackFlag
+    clearCells();
+});
 
 createGrid(squaresPerSide);
