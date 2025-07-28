@@ -33,7 +33,9 @@ function handleCellHover(event) {
 }
 
 function getGridSize() {
-
+    
 }
+
+gridSizeButton.addEventListener('click', getGridSize)
 
 createGrid(squaresPerSide);
