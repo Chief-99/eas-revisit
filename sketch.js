@@ -3,11 +3,12 @@ const gridSizeButton = document.getElementById('grid-size-button');
 const clearButton = document.getElementById('clear-button');
 const randomButton = document.getElementById('random-colours-button');
 const gridlinesButton = document.getElementById('gridlines-button');
+const shadingButton = document.getElementById('shading-button');
 let squaresPerSide = 16;
 const flags = {
     blackFlag: true,
     gridlines: true,
-    shading: true,
+    shading: false,
 };
 
 function createGrid(squaresValue) {
@@ -58,7 +59,7 @@ function handleCellHover(event) {
         if (flags.shading) {
             target.style.backgroundColor = `rgba(0, 0, 0, ${(opacity + 0.1).toFixed(1)})`
         }
-    }
+    };
 }
 
 function increaseOpacity(opacity) {
@@ -107,6 +108,7 @@ randomButton.addEventListener('click', () => {
     flags.blackFlag = !flags.blackFlag
     clearCells();
 });
-gridlinesButton.addEventListener('click', toggleGridlines)
+gridlinesButton.addEventListener('click', toggleGridlines);
+shadingButton.addEventListener('click', () => flags.shading = !flags.shading);
 
 createGrid(squaresPerSide);
