@@ -12,17 +12,21 @@ function createGrid() {
             row.append(cell);
         }
         grid.append(row);
+        
+        cellEventListeners()
     }
 }
 
 function cellEventListeners() {
     const allCells = document.querySelectorAll('.cell');
-    allCells.forEach('moouseenter', handleCellHover);
+    allCells.forEach((cell) => {
+        cell.addEventListener('mouseenter', handleCellHover);
+    });
 }
 
 function handleCellHover(event) {
     let target = event.target;
-    target.background = 'hsla()'
+    target.style.backgroundColor = 'hsla(0, 0%, 0%, 1)';
 }
 
 createGrid();
