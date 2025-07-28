@@ -1,18 +1,19 @@
 const gridContainer = document.getElementById('grid-container');
 const grid = document.getElementById('grid');
+let squaresPerSide = 16;
 
 function createGrid() {
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < squaresPerSide; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < squaresPerSide; j++) {
             let cell = document.createElement('div');
             cell.classList.add('cell');
             cell.style.background = 'hsla(360, 100%, 100%, 1)';
             row.append(cell);
         }
         grid.append(row);
-        
+
         cellEventListeners()
     }
 }
