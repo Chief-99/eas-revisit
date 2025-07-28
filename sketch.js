@@ -25,7 +25,7 @@ function createGrid(squaresValue) {
         row.classList.add('row');
         for (let j = 0; j < squaresValue; j++) {
             let cell = document.createElement('div');
-            cell.classList.add('cell');
+            cell.classList.add('cell', 'border-cell');
             cell.style.backgroundColor = 'rgba(255, 255, 255, 1)';
             row.append(cell);
         }
@@ -77,7 +77,18 @@ function clearCells() {
     }) 
 }
 
+function toggleGridlines() {
+    flags.gridlines = !flags.gridlines;
+    const allCells = document.querySelectorAll('.cell');
+    allCells.forEach((cell) => {
+        if (!flags.gridlines) {
+           cell.classList.remove('border-cell'); 
+        } else {
+            cell.classList.add('border-cell');
+        }
+    })
 
+}
 
 gridSizeButton.addEventListener('click', getGridSize);
 clearButton.addEventListener('click', clearCells);
@@ -85,5 +96,6 @@ randomButton.addEventListener('click', () => {
     flags.blackFlag = !flags.blackFlag
     clearCells();
 });
+gridlinesButton.addEventListener('click', toggleGridlines)
 
 createGrid(squaresPerSide);
