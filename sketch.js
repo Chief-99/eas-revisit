@@ -3,6 +3,9 @@ const gridSizeButton = document.getElementById('grid-size-button');
 const clearButton = document.getElementById('clear-button');
 const randomButton = document.getElementById('random-colours-button');
 let squaresPerSide = 16;
+const flags = {
+    blackFlag: true,
+}
 
 function createGrid(squaresValue) {
     const existingGrid = document.getElementById('grid');
@@ -44,7 +47,7 @@ function handleCellHover(event) {
     let s = Math.floor(Math.random() * 255);
     let l = Math.floor(Math.random() * 255);
 
-    target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`
+    target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`;
 }
 
 function getGridSize() {
