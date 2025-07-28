@@ -4,11 +4,11 @@ const gridSizeButton = document.getElementById('grid-size-button');
 
 let squaresPerSide = 16;
 
-function createGrid() {
-    for (let i = 0; i < squaresPerSide; i++) {
+function createGrid(squaresValue) {
+    for (let i = 0; i < squaresValue; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
-        for (let j = 0; j < squaresPerSide; j++) {
+        for (let j = 0; j < squaresValue; j++) {
             let cell = document.createElement('div');
             cell.classList.add('cell');
             cell.style.background = 'hsla(360, 100%, 100%, 1)';
@@ -32,4 +32,8 @@ function handleCellHover(event) {
     target.style.backgroundColor = 'hsla(0, 0%, 0%, 1)';
 }
 
-createGrid();
+function getGridSize() {
+
+}
+
+createGrid(squaresPerSide);
