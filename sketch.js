@@ -1,10 +1,18 @@
 const gridContainer = document.getElementById('grid-container');
-const grid = document.getElementById('grid');
 const gridSizeButton = document.getElementById('grid-size-button');
 
 let squaresPerSide = 16;
 
 function createGrid(squaresValue) {
+    const existingGrid = document.getElementById('grid');
+
+    if (existingGrid) {
+        gridContainer.removeChild(existingGrid);
+        const grid = document.createElement('div');
+        grid.id = 'grid';
+        gridContainer.append(grid);
+    }
+
     for (let i = 0; i < squaresValue; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
@@ -33,7 +41,8 @@ function handleCellHover(event) {
 }
 
 function getGridSize() {
-    
+    squaresPerSide = prompt('Enter number of squares per side:', '');
+    createGrid(squaresPerSide);
 }
 
 gridSizeButton.addEventListener('click', getGridSize)
