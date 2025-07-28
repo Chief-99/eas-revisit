@@ -1,6 +1,7 @@
 const gridContainer = document.getElementById('grid-container');
 const gridSizeButton = document.getElementById('grid-size-button');
 const clearButton = document.getElementById('clear-button');
+const randomButton = document.getElementById('random-colours-button');
 let squaresPerSide = 16;
 
 function createGrid(squaresValue) {
@@ -20,7 +21,7 @@ function createGrid(squaresValue) {
         for (let j = 0; j < squaresValue; j++) {
             let cell = document.createElement('div');
             cell.classList.add('cell');
-            cell.style.background = 'hsla(360, 100%, 100%, 1)';
+            cell.style.backgroundColor = 'rgba(255, 255, 255, 1)';
             row.append(cell);
         }
         grid.append(row);
@@ -38,7 +39,12 @@ function cellEventListeners() {
 
 function handleCellHover(event) {
     let target = event.target;
-    target.style.backgroundColor = 'hsla(0, 0%, 0%, 1)';
+    // target.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+    let h = Math.floor(Math.random() * 255);
+    let s = Math.floor(Math.random() * 255);
+    let l = Math.floor(Math.random() * 255);
+
+    target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`
 }
 
 function getGridSize() {
