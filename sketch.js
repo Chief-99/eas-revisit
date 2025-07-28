@@ -6,9 +6,10 @@ function createGrid() {
         let row = document.createElement('div');
         row.classList.add('row');
         for (let j = 0; j < 16; j++) {
-            let column = document.createElement('div');
-            column.classList.add('cell');
-            row.append(column);
+            let cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.style.background = 'hsla(360, 100%, 100%, 1)';
+            row.append(cell);
         }
         grid.append(row);
     }
@@ -17,6 +18,11 @@ function createGrid() {
 function cellEventListeners() {
     const allCells = document.querySelectorAll('.cell');
     allCells.forEach('moouseenter', handleCellHover);
+}
+
+function handleCellHover(event) {
+    let target = event.target;
+    target.background = 'hsla()'
 }
 
 createGrid();
