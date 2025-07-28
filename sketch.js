@@ -14,4 +14,9 @@ function createGrid() {
     }
 }
 
+function cellEventListeners() {
+    const allCells = document.querySelectorAll('.cell');
+    allCells.forEach('moouseenter', handleCellHover);
+}
+
 createGrid();
