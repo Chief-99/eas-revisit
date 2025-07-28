@@ -7,6 +7,7 @@ let squaresPerSide = 16;
 const flags = {
     blackFlag: true,
     gridlines: true,
+    shading: false,
 };
 
 function createGrid(squaresValue) {
