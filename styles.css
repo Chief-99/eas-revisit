@@ -106,6 +106,7 @@ header {
 /* main section */
 body {
     background-color: var(--blue-900);
+    font-family: var(--font-body);
 }
 
 main {
@@ -156,4 +157,18 @@ main {
     padding: 0;
     cursor: pointer;
     outline-offset: 4px;
+}
+
+.front {
+    display: block;
+    padding: 1rem 3rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    background: var(--front-pink);
+    color: var(--pink-100);
+    transform: translateY(-8px);
+}
+
+.pushable:active .front {
+    transform: translateY(-4px);
 }
