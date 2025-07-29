@@ -106,6 +106,9 @@ header {
 main {
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--blue-900);
+    padding: 1rem;
+    
 }
 
 .buttons-container {
@@ -117,7 +120,7 @@ main {
 #grid-container {
     width: 50rem;
     height: 50rem;
-    margin-top: 8px;
+    background-color: white;
 }
 
 #grid {
