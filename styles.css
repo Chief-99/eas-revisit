@@ -73,7 +73,16 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-
+:root {
+    --blue-900: #191926;
+    --blue-700: #323640;
+    --pink-600: #c52184;
+    --pink-300: #e574bc;
+    --pink-100: #f9b4ed;
+    
+    --font-header: 'Pixelify Sans', sans-serif;
+    --font-body: 'Orbitron', sans-serif;
+}
 
 #grid-container {
     width: 50rem;
