@@ -123,6 +123,7 @@ main {
     width: 45rem;
     height: 45rem;
     background-color: white;
+    border: var(--pink-600) 6px solid;
 }
 
 #grid {
