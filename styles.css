@@ -125,7 +125,7 @@ main {
     width: 45rem;
     height: 45rem;
     background-color: white;
-    border: var(--pink-600) 6px solid;
+    border: var(--front-pink) 6px solid;
 }
 
 #grid {
@@ -161,11 +161,12 @@ main {
 
 .front {
     display: block;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     border-radius: 0.75rem;
     font-size: 1.25rem;
     background: var(--front-pink);
     color: var(--pink-100);
+    letter-spacing: 2px;
     transform: translateY(-8px);
 }
 
