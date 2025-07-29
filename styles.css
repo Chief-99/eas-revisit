@@ -103,12 +103,14 @@ header {
 }
 
 /* main section */
+body {
+    background-color: var(--blue-900);
+}
+
 main {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--blue-900);
-    padding: 1rem;
-    
+    padding: 3rem;
 }
 
 .buttons-container {
@@ -118,8 +120,8 @@ main {
 }
 
 #grid-container {
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     background-color: white;
 }
 
