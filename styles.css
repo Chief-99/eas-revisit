@@ -81,7 +81,8 @@ textarea:not([rows]) {
 :root {
     --blue-900: #191926;
     --blue-700: #323640;
-    --pink-600: #c52184;
+    --pushable-pink: #7A1552;
+    --front-pink: #C02180;
     --pink-300: #e574bc;
     --pink-100: #f9b4ed;
     
@@ -145,4 +146,14 @@ main {
 .row {
     display: flex;
     height: 100%;
+}
+
+/* button styles */
+.pushable {
+    background: var(--pushable-pink);
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
 }
