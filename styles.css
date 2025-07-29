@@ -170,10 +170,21 @@ main {
     transform: translateY(-8px);
 }
 
-.pushable:active .front {
-    transform: translateY(-4px);
-}
 
 .pushable:focus:not(:focus-visible) {
     outline: none;
+}
+
+/* hover state */
+.front {
+    will-change: transform;
+    transition: transform 250ms;
+}
+
+.pushable:hover .front {
+    transform: translateY(-10px)
+}
+
+.pushable:active .front {
+    transform: translateY(-4px);
 }
