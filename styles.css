@@ -173,3 +173,7 @@ main {
 .pushable:active .front {
     transform: translateY(-4px);
 }
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+}
