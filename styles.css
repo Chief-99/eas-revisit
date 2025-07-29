@@ -96,6 +96,11 @@ header {
     padding: 1.5rem;
 }
 
+#heading {
+    font-size: 3rem;
+    font-family: var(--font-header);
+}
+
 #grid-container {
     width: 50rem;
     height: 50rem;
