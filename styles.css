@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+/* Remove default margin */
+* {
+    margin: 0;
+}
+
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
@@ -82,6 +87,13 @@ textarea:not([rows]) {
     
     --font-header: 'Pixelify Sans', sans-serif;
     --font-body: 'Orbitron', sans-serif;
+}
+
+header {
+    background-color: var(--blue-700);
+    color: var(--pink-100);
+    justify-items: center;
+    padding: 1.5rem;
 }
 
 #grid-container {
