@@ -89,6 +89,7 @@ textarea:not([rows]) {
     --font-body: 'Orbitron', sans-serif;
 }
 
+/* heading section */
 header {
     background-color: var(--blue-700);
     color: var(--pink-100);
@@ -99,6 +100,18 @@ header {
 #heading {
     font-size: 3rem;
     font-family: var(--font-header);
+}
+
+/* main section */
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #grid-container {
