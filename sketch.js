@@ -5,6 +5,9 @@ const randomButton = document.getElementById('random-colours-button');
 const gridlinesButton = document.getElementById('gridlines-button');
 const shadingButton = document.getElementById('shading-button');
 const gridDisplay = document.getElementById('grid-display');
+const gridlinesState = document.getElementById('gridlines-state');
+const shadingState = document.getElementById('shading-state');
+const colourMode = document.getElementById('colour-mode');
 let squaresPerSide = 16;
 const flags = {
     blackFlag: true,
@@ -108,6 +111,10 @@ function toggleGridlines() {
 function displaySize() {
     let size = squaresPerSide;
     gridDisplay.textContent = `${size} X ${size}`;
+}
+
+function displayState() {
+
 }
 
 gridSizeButton.addEventListener('click', getGridSize);
