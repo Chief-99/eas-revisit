@@ -41,6 +41,7 @@ function createGrid(squaresValue) {
     }
 
     displaySize();
+    displayColourMode();
 }
 
 function cellEventListeners() {
@@ -66,10 +67,6 @@ function handleCellHover(event) {
             target.style.backgroundColor = `rgba(0, 0, 0, ${(opacity + 0.1).toFixed(1)})`
         }
     };
-}
-
-function increaseOpacity(opacity) {
-    return opacity += 0.1;
 }
 
 function getGridSize() {
@@ -111,10 +108,15 @@ function toggleGridlines() {
 function displaySize() {
     let size = squaresPerSide;
     gridDisplay.textContent = `${size} X ${size}`;
+    return;
 }
 
-function displayState() {
-
+function displayColourMode() {
+    if (flags.blackFlag === true) {
+        colourMode.textContent = `colour mode: black`;
+    } else {
+        colourMode.textContent = `colour mode: random`;
+    }
 }
 
 gridSizeButton.addEventListener('click', getGridSize);
@@ -122,6 +124,7 @@ clearButton.addEventListener('click', clearCells);
 randomButton.addEventListener('click', () => {
     flags.blackFlag = !flags.blackFlag
     clearCells();
+    displayColourMode();
 });
 gridlinesButton.addEventListener('click', toggleGridlines);
 shadingButton.addEventListener('click', () => flags.shading = !flags.shading);
