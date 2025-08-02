@@ -42,6 +42,8 @@ function createGrid(squaresValue) {
 
     displaySize();
     displayColourMode();
+    displayGridlinesState();
+    displayShadingState();
 }
 
 function cellEventListeners() {
@@ -103,6 +105,7 @@ function toggleGridlines() {
         }
     })
 
+    displayGridlinesState();
 }
 
 function displaySize() {
@@ -112,10 +115,26 @@ function displaySize() {
 }
 
 function displayColourMode() {
-    if (flags.blackFlag === true) {
+    if (flags.blackFlag) {
         colourMode.textContent = `colour mode: black`;
     } else {
         colourMode.textContent = `colour mode: random`;
+    }
+}
+
+function displayGridlinesState() {
+    if (flags.gridlines) {
+        gridlinesState.textContent = `gridlines: enabled`;
+    } else {
+        gridlinesState.textContent = `gridlines: disabled`;
+    }
+}
+
+function displayShadingState() {
+    if (flags.shading) {
+        shadingState.textContent = `shading: enabled`;
+    } else {
+        shadingState.textContent = `shading: disabled`;
     }
 }
 
@@ -127,6 +146,9 @@ randomButton.addEventListener('click', () => {
     displayColourMode();
 });
 gridlinesButton.addEventListener('click', toggleGridlines);
-shadingButton.addEventListener('click', () => flags.shading = !flags.shading);
+shadingButton.addEventListener('click', () => {
+    flags.shading = !flags.shading;
+    displayShadingState();
+})
 
 createGrid(squaresPerSide);
