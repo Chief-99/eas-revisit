@@ -135,6 +135,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 }
 
 #grid-container {
@@ -163,6 +164,11 @@ main {
 .row {
   display: flex;
   height: 100%;
+}
+
+#grid-display {
+  color: var(--pink-100);
+  font-size: 2.5rem;
 }
 
 /* button styles */

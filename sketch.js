@@ -107,7 +107,7 @@ function toggleGridlines() {
 
 function displaySize() {
     let size = squaresPerSide;
-    gridDisplay.textContent = `${size} x ${size}`;
+    gridDisplay.textContent = `${size} X ${size}`;
 }
 
 gridSizeButton.addEventListener('click', getGridSize);
