@@ -36,6 +36,8 @@ function createGrid(squaresValue) {
 
         cellEventListeners()
     }
+
+    displaySize();
 }
 
 function cellEventListeners() {
@@ -101,6 +103,11 @@ function toggleGridlines() {
         }
     })
 
+}
+
+function displaySize() {
+    let size = squaresPerSide;
+    gridDisplay.textContent = `${size} x ${size}`;
 }
 
 gridSizeButton.addEventListener('click', getGridSize);
