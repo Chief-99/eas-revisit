@@ -4,6 +4,7 @@ const clearButton = document.getElementById('clear-button');
 const randomButton = document.getElementById('random-colours-button');
 const gridlinesButton = document.getElementById('gridlines-button');
 const shadingButton = document.getElementById('shading-button');
+const gridDisplay = document.getElementById('grid-display');
 let squaresPerSide = 16;
 const flags = {
     blackFlag: true,
