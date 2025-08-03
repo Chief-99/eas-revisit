@@ -55,13 +55,13 @@ function cellEventListeners() {
 
 function handleCellHover(event) {
     let target = event.target;
-    let h = Math.floor(Math.random() * 255);
-    let s = Math.floor(Math.random() * 255);
-    let l = Math.floor(Math.random() * 255);
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
     let opacity = parseFloat(target.style.backgroundColor.split(',')[3]);
 
     if (!flags.blackFlag) {
-        target.style.backgroundColor = `rgba(${h}, ${s}, ${l}, 1)`;
+        target.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1)`;
     } else {
         target.style.backgroundColor = 'rgba(0, 0, 0, 1)';
 
