@@ -146,7 +146,6 @@ main {
 }
 
 #grid {
-  width: 100%;
   border: black 1px solid;
   display: flex;
   height: 100%;
