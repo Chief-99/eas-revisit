@@ -1,0 +1,5 @@
+# Etch-a-sketch reworked
+
+I decided to redo the etch-a-sketch because a) I wanted to refresh my memory on some things as I had taken quite a long break, while still doing something productive, and b) because I didn't really like the first one. So, you will see another etch-a-sketch on my page (it's probably best not to go look at it). 
+
+I think this one went a lot better. Functionally it works pretty well and I'm quite happy with it. I actually spent quite a lot of time just messing around with it just for fun (I also enjoy drawing) which I think is a good sign. One thing that I am really proud of though is the styling. On the last one I spent a lot of time on the styling and I think I just tried to do too much. At some point I just left it, even though I wasn't really happy with it, because I remembered that I was doing this for the functionality, not the looks (shoutout to The Odin Project). This time however, I decided to just keep it simple and clean and it came out a lot better. The coolest part for me are the buttons. I used a Josh Comeau animation (which you can find [here](https://www.joshwcomeau.com/animation/3d-button/) so shoutout to him too.
